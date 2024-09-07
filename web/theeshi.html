@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sộp pe pha ke</title>
+    <link rel="stylesheet" href="product-styles.css">
+    <link rel="stylesheet" href="cart-styles.css">
+</head>
+<body>
+    <header>
+        <h1>Chào mừng đến với Cửa Hàng Thú Nhồi Bông!</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Trang Chủ</a></li>
+                <li><a href="#">Sản Phẩm</a></li>
+                <li><a id="view-cart" href="javascript:void(0)">Giỏ Hàng</a></li> <!-- Nút mở giỏ hàng -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Sản phẩm của chúng tôi</h2>
+        <!-- Ô tìm kiếm và bộ lọc sản phẩm -->
+        <input type="text" id="search" placeholder="Tìm kiếm sản phẩm...">
+        <select id="sort">
+            <option value="default">Sắp xếp theo</option>
+            <option value="price-asc">Giá: Thấp đến Cao</option>
+            <option value="price-desc">Giá: Cao đến Thấp</option>
+            <option value="name-asc">Tên: A-Z</option>
+            <option value="name-desc">Tên: Z-A</option>
+        </select>
+
+        <!-- Khu vực hiển thị danh sách sản phẩm -->
+        <div id="product-list" class="product-list">
+            <!-- Các sản phẩm sẽ được chèn ở đây bởi JavaScript -->
+        </div>
+
+        <!-- Form thêm sản phẩm mới -->
+        <h3>Thêm sản phẩm mới</h3>
+        <form id="add-product-form">
+            <input type="text" id="new-product-name" placeholder="Tên sản phẩm" required>
+            <input type="number" id="new-product-price" placeholder="Giá sản phẩm" required>
+            <input type="text" id="new-product-image" placeholder="Link ảnh sản phẩm" required>
+            <textarea id="new-product-description" placeholder="Mô tả sản phẩm"></textarea>
+            <button type="submit">Thêm sản phẩm</button>
+        </form>
+    </main>
+
+    <!-- Khu vực giỏ hàng -->
+    <section id="cart" class="hidden"> <!-- Giỏ hàng được ẩn mặc định với class "hidden" -->
+        <h2>Giỏ Hàng</h2>
+        <div id="cart-items">
+            <!-- Các sản phẩm trong giỏ hàng sẽ được chèn vào đây bởi JavaScript -->
+        </div>
+        <div id="cart-total">
+            <strong>Tổng số sản phẩm:</strong> <span id="total-quantity">0</span><br>
+            <strong>Tổng tiền:</strong> <span id="total-price">0 VNĐ</span>
+        </div>
+        <button id="clear-cart">Xóa Giỏ Hàng</button> <!-- Nút xóa giỏ hàng -->
+        <button id="checkout">Thanh Toán</button> <!-- Nút thanh toán -->
+        <button id="close-cart">Đóng</button> <!-- Nút đóng giỏ hàng -->
+    </section>
+
+    <script src="script.js"></script> <!-- Liên kết file JavaScript -->
+</body>
+</html>

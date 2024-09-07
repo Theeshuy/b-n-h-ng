@@ -1,0 +1,105 @@
+/* Giỏ hàng */
+#cart {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Đặt giỏ hàng ở vị trí cố định */
+    top: 20px; /* Khoảng cách từ đỉnh trang */
+    right: 20px; /* Khoảng cách từ bên phải trang */
+    width: 300px; /* Chiều rộng của giỏ hàng */
+    z-index: 1000; /* Đảm bảo giỏ hàng nằm trên các phần tử khác */
+    display: none; /* Ẩn giỏ hàng mặc định */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Hiệu ứng chuyển đổi cho giỏ hàng */
+}
+
+/* Tiêu đề giỏ hàng */
+#cart h2 {
+    margin-top: 0;
+    font-size: 24px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+/* Danh sách sản phẩm trong giỏ hàng */
+#cart-items {
+    margin-bottom: 20px;
+}
+
+/* Thẻ sản phẩm trong giỏ hàng */
+#cart-items div {
+    margin-bottom: 10px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+/* Nút xóa sản phẩm khỏi giỏ hàng */
+#cart-items button {
+    background: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+#cart-items button:hover {
+    background: #c82333;
+}
+
+/* Tổng số tiền và số lượng trong giỏ hàng */
+#cart-total {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Khoảng cách giữa các phần tử tổng số tiền và số lượng */
+#cart-total strong {
+    margin-right: 10px;
+}
+
+/* Nút làm sạch giỏ hàng và thanh toán */
+#cart button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-right: 10px; /* Khoảng cách giữa các nút */
+}
+
+#cart button:hover {
+    background: #0056b3;
+}
+
+/* Hiển thị/ẩn giỏ hàng */
+.hidden {
+    display: none;
+}
+
+/* Hiệu ứng bay vào giỏ hàng */
+.fly {
+    animation: flyToCart 1s ease-out forwards;
+}
+
+@keyframes flyToCart {
+    from {
+        opacity: 1;
+        transform: scale(1); /* Bắt đầu từ kích thước gốc */
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-100px) scale(0.5); /* Di chuyển lên trên và thu nhỏ */
+    }
+}

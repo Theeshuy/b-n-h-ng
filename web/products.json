@@ -1,0 +1,82 @@
+[
+    {
+        "id": "1",
+        "name": "Thú Nhồi Bông labubu",
+        "price": 150000,
+        "rating": 5,
+        "image": "toy1.jpg",
+        "description": "Một chú gấu labubu dễ thương, mềm mại, và hoàn hảo để ôm ngủ."
+    },
+    {
+        "id": "2",
+        "name": "Thú Nhồi Bông Hươu Cao Cổ",
+        "price": 180000,
+        "rating": 4,
+        "image": "toy2.jpg",
+        "description": "Hươu cao cổ với cổ dài và lông mềm, thú cưng hoàn hảo cho bé."
+    },
+    {
+        "id": "3",
+        "name": "Thú Nhồi Bông Cừu",
+        "price": 200000,
+        "rating": 4,
+        "image": "toy3.jpg",
+        "description": "Cừu nhồi bông với lớp lông mềm mịn và khuôn mặt dễ thương."
+    },
+    {
+        "id": "4",
+        "name": "Thú Nhồi Bông Gấu Xám",
+        "price": 170000,
+        "rating": 5,
+        "image": "toy4.jpg",
+        "description": "Gấu nhồi bông màu xám, kích thước vừa phải, dễ thương."
+    },
+    {
+        "id": "5",
+        "name": "Thú Nhồi Bông Lạc Đà",
+        "price": 190000,
+        "rating": 4,
+        "image": "toy5.jpg",
+        "description": "Lạc đà nhồi bông mềm mịn với hình dáng độc đáo."
+    },
+    {
+        "id": "6",
+        "name": "Thú Nhồi Bông Chó",
+        "price": 160000,
+        "rating": 5,
+        "image": "toy6.jpg",
+        "description": "Chó nhồi bông, người bạn trung thành cho mọi lứa tuổi."
+    },
+    {
+        "id": "7",
+        "name": "Thú Nhồi Bông Mèo",
+        "price": 140000,
+        "rating": 3,
+        "image": "toy7.jpg",
+        "description": "Mèo nhồi bông dễ thương với đôi mắt tròn to."
+    },
+    {
+        "id": "8",
+        "name": "Thú Nhồi Bông Hổ",
+        "price": 220000,
+        "rating": 5,
+        "image": "toy8.jpg",
+        "description": "Hổ nhồi bông mạnh mẽ và dễ thương cho những người yêu động vật."
+    },
+    {
+        "id": "9",
+        "name": "Thú Nhồi Bông Voi",
+        "price": 250000,
+        "rating": 5,
+        "image": "toy9.jpg",
+        "description": "Voi nhồi bông lớn, thích hợp làm quà tặng cho mọi dịp."
+    },
+    {
+        "id": "10",
+        "name": "Thú Nhồi Bông Cáo",
+        "price": 210000,
+        "rating": 4,
+        "image": "toy10.jpg",
+        "description": "Cáo nhồi bông mềm mại, hoàn hảo để ôm ngủ."
+    }
+]
